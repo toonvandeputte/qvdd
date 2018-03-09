@@ -1,0 +1,80 @@
+html,body { 
+	height: 100%; margin: 0px; padding: 0px;
+	overflow: hidden;
+}
+.pagewrapper {
+	background-color: hotpink;
+	transition: background-color 0.2s;
+	height: 100%;
+	display: grid;
+	grid-template-columns: [begin] auto [mid] 100px auto [end];
+	grid-template-rows: [begin] auto [mid] 100px auto [end];
+	&.loaded {
+		background-color: #333333;
+	}
+}
+
+.quoteimg {
+	padding:0;
+	margin:0;
+	background-position: center;
+	background-size: cover;
+	grid-column: begin / end;
+	grid-row: begin / end;
+	display: none;
+	&.noshow {
+		opacity: 0;
+	}
+}
+
+.quoteimg .fullsize {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	//background-color: green;
+}
+
+figcaption.layout1 {
+	top:20px;
+	left:20px;
+}
+
+figcaption.layout2 {
+	top:20px;
+	right:20px;
+}
+
+figcaption.layout3 {
+	bottom:20px;
+	left:20px;
+}
+
+.quoteimg figcaption {
+	position: absolute;
+	max-width: 30%;
+	background-color: black;
+	padding: 20px;
+	padding-left: 40px;
+	font-size: 40px;
+	font-family: Cairo, Verdana, sans-serif;
+	color:white;
+	z-index: 10;
+	opacity: inherit;
+}
+
+.quoteimg .photocredit {
+	background-color: black;
+	padding:10px;
+	font-size: 14px;
+	font-family: Cairo, Verdana, sans-serif;
+	position: absolute;
+	bottom:0;
+	right:0;
+	color:white;
+	a {
+		color:white;
+	}
+}
+
+@import "loader";
