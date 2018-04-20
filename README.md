@@ -3,7 +3,7 @@ Klasse Quote Van De Dag ontsloten
 
 #howto
 
-De site lokaal draaien kan je doen met light-server via bvb `light-server -s . -p 7000`, de site zal dan bereikbaar zijn op localhost:7000
+De site lokaal draaien kan je doen met light-server via bvb `light-server -s . -p 7000` (of `node_modules/light-server/bin/light-server  -s . -p 7000`), de site zal dan bereikbaar zijn op localhost:7000
 
 Requirements moeten geïnstalleerd worden met `npm install` (cfr package.json).
 

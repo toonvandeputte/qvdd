@@ -17,8 +17,14 @@ $( document ).ready(function() {
 		window.sheetskey = keys[0];
 		window.photokey = keys[1];
 	}
-	
 	loadcontent();
+
+	$( ".quoteimg" ).click(function(){
+		window.clearInterval(window.flipper);
+		flip_quote();
+		cycle();
+	})
+
 });
 
 function loadcontent(){
